@@ -1,4 +1,3 @@
-import samuraiImg from "../assets/samuraikb.png";
 function Footer() {
   return (
     <>
@@ -8,10 +7,10 @@ function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        GitHub repository
+        GitHub Link: "Samurai Kanban Board"
       </a>
       <div>
-        <img src={samuraiImg} alt="samuraiImg" className="samuraiImg" />
+        <h6>By Alec and Felix</h6>
       </div>
     </>
   );

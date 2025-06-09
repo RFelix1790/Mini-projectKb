@@ -10,9 +10,9 @@ function App() {
       <nav className="navbar">
         <NavBar />
       </nav>
-      <main className="main">
-        <Mainpage />
+      <main className="main-container">
         <SideBar />
+        <Mainpage />
       </main>
       <footer className="footer">
         <Footer />
