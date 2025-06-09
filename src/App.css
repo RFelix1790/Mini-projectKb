@@ -1,13 +1,41 @@
 nav {
-  height: 15vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .main {
   height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+.sideBar {
+  max-width: 20vh;
+  font-size: 40px;
+  background-color: rgb(98, 193, 134);
+}
+.sideBar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.sideBar a {
+  text-decoration: none;
+  color: black;
+  line-height: 1.5;
 }
 footer {
   height: 10vh;
   background-color: lightblue;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.samuraiImg {
+  height: 10vh;
+  width: auto;
+}
+.linkGit {
+  text-decoration: none;
+  color: black;
 }

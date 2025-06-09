@@ -1,6 +1,19 @@
+import samuraiImg from "../assets/samuraikb.png";
 function Footer() {
   return (
-    <p className="linkGit">https://github.com/RFelix1790/Mini-projectKb</p>
+    <>
+      <a
+        className="linkGit"
+        href="https://github.com/RFelix1790/Mini-projectKb"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub repository
+      </a>
+      <div>
+        <img src={samuraiImg} alt="samuraiImg" className="samuraiImg" />
+      </div>
+    </>
   );
 }
 export default Footer;
