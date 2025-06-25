@@ -1,10 +1,5 @@
 import Itemcard from "./Itemcard";
-import tasks from "../assets/data.json";
-const List = () => {
-  return (
-    <>
-      <Itemcard tasks={tasks} />
-    </>
-  );
+const List = ({ tasks, handleDeleteTask }) => {
+  return <Itemcard tasks={tasks} handleDeleteTask={handleDeleteTask} />;
 };
 export default List;

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-navbar {
+  height: 10vh;
+  display: flex;
+  background-color: rgb(245, 238, 228);
+  align-items: center;
+}
+.main-container {
+  height: 85vh;
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  position: relative;
+  margin: 0;
+}
+.board-screen {
+  position: relative;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 50px;
+}
+.sideBar {
+  width: 10vw;
+  font-size: 40px;
+  display: flex;
+  position: relative;
+  height: 85vh;
+  right: 0px;
+  align-items: center;
+  justify-content: center;
+  border-right: 5px solid rgb(184, 183, 183);
+}
+.sideBar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.sideBar a {
+  text-decoration: none;
+  color: black;
+  line-height: 1.5;
+}
+footer {
+  height: 5vh;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 238, 228);
+  flex-direction: column;
+}
+.samuraiImg {
+  height: 10vh;
+}
+.linkGit {
+  text-decoration: underline;
+  color: rgb(90, 90, 164);
+}
+footer h6 {
+  font-size: 16px;
+  font-style: italic;
+}

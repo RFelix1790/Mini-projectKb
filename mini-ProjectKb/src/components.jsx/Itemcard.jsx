@@ -1,7 +1,14 @@
-export default function Itemcard({ tasks, handleDeleteTask }) {
+import { useState } from "react";
+
+export default function Itemcard({ tasks }) {
+  const [taskList, setTaskList] = useState(tasks);
+
+  function handleDelete(id) {
+    setTaskList(taskList.filter((task) => task.id !== id));
+  }
   return (
     <div>
-      {tasks.map((task) => {
+      {taskList.map((task) => {
         let bgColor = "";
         if (task.status === "To Do") {
           bgColor = "red";
@@ -24,7 +31,7 @@ export default function Itemcard({ tasks, handleDeleteTask }) {
             }}
           >
             <h3>{task.title}</h3>
-            <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
+            <button onClick={() => handleDelete(task.id)}>Delete</button>
           </div>
         );
       })}
