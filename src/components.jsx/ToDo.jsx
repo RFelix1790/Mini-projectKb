@@ -1,7 +1,7 @@
 function ToDo() {
   return (
-    <div>
-      <h2>To Do</h2>
+    <div className="todo-column">
+      <h2 className="todo-column-title">To Do</h2>
     </div>
   );
 }

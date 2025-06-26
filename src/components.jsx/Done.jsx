@@ -1,7 +1,7 @@
 function Done() {
   return (
-    <div>
-      <h2>Done</h2>
+    <div className="done-column">
+      <h2 className="done-column-title">Done</h2>
     </div>
   );
 }

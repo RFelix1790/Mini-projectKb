@@ -1,7 +1,7 @@
 function InProgress() {
   return (
-    <div>
-      <h2>In Progress</h2>
+    <div className="inprogress-column">
+      <h2 className="inprogress-column-title">In Progress</h2>
     </div>
   );
 }

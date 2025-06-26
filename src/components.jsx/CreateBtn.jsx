@@ -32,9 +32,7 @@ const CreateBtn = ({ handleCreateTask }) => {
     });
   }
   return (
-    <form onSubmit={handleFormSubmit}>
-      <span>Add a new task</span>
-
+    <form onSubmit={handleFormSubmit} >
       <div>
         <label>
           Title

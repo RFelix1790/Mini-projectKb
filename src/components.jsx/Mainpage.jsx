@@ -6,14 +6,17 @@ import CreateBtn from "./CreateBtn";
 function Mainpage({ tasks, handleCreateTask, handleDeleteTask }) {
   return (
     <div className="board-screen">
-      <List tasks={tasks} handleDeleteTask={handleDeleteTask} />
+      {/* <List tasks={tasks} handleDeleteTask={handleDeleteTask} /> */}
       <section className="tasks-control">
-        <ToDo />
-        <InProgress />
-        <Done />
+        <ToDo className="todo-column" />
+        <InProgress className="inProgress-column" />
+        <Done className="done-column" />
       </section>
       <section className="create-btn">
-        <CreateBtn handleCreateTask={handleCreateTask} />
+        <CreateBtn
+          handleCreateTask={handleCreateTask}
+          className="add-task-form"
+        />
       </section>
     </div>
   );
