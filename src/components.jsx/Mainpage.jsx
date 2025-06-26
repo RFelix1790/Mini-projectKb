@@ -8,9 +8,9 @@ function Mainpage({ tasks, handleCreateTask, handleDeleteTask }) {
     <div className="board-screen">
       {/* <List tasks={tasks} handleDeleteTask={handleDeleteTask} /> */}
       <section className="tasks-control">
-        <ToDo className="todo-column" />
-        <InProgress className="inProgress-column" />
-        <Done className="done-column" />
+        <ToDo tasks={tasks} handleDeleteTask={handleDeleteTask} className="todo-column" />
+        <InProgress tasks={tasks} handleDeleteTask={handleDeleteTask} className="inProgress-column" />
+        <Done tasks={tasks} handleDeleteTask={handleDeleteTask} className="done-column" />
       </section>
       <section className="create-btn">
         <CreateBtn
